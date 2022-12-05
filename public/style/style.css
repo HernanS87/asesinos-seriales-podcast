@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    color: #fff;
+    overflow-x: hidden;
+    background: #1e1e1e;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: #5840e0;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    background: radial-gradient();
+}
+
+header div {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header i {
+    font-size: 40px;
+}
+
+
+nav {
+    flex-basis: 210px;
+    padding-right: 10px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.splash {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/asesino-hit3.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
+.main-text {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.main-text h2, p, iframe {
+    padding-left: 30px;
+}
+.main-text h2{
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-right: 2px;
+    max-width: 450px;
+}
+
+.trailer {
+    flex-basis: 270px;
+    padding-top: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.space {
+    padding: 100px 0;
+}
+
+.dad-description{
+    background: linear-gradient(180deg,#010101,#1e1e1e) ;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+
+.description h1 {
+    font-size: 2.2em;
+}
+.description p {
+    padding: 5px;
+    text-align: center;
+}
+
+.dad-episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
+
+.episodes {
+    flex-basis: 300px;
+    height: 450px;
+    margin: 40px 10px;
+    background: linear-gradient(180deg,#5840e0 232px,#1e1e1e);
+    border-radius: 12px;
+}
+
+.episodes p{
+    padding: 0 5px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+
+}
+
+.episodes iframe {
+    flex-basis: 300px;
+    height: 232px;
+    padding: 0;
+}
+
+.episodes:nth-child(14) p {
+    margin: 10px;
+}
+
+.episodes:hover {
+    outline: 1px solid #fff;
+}
+
+footer{
+    background: linear-gradient(180deg, #1e1e1e, #666);
+    padding: 50px 40px 10px 40px;
+}
+
+footer p {
+    padding: 0;
+}
+
+small {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+@media screen and (max-width: 1280px) {
+    .dad-episodes {
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1127px) {
+    .splash {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/asesino-hit2.jpg) no-repeat fixed ;
+        background-size: cover;
+    }
+    
+}
+
+@media screen and (max-width: 924px) {
+    .main-text h2{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .splash {
+        background: #010101;
+    }
+    .main-text {
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text h2, p, iframe {
+        padding-left: 0;
+    }
+    .main-text h2{
+        margin-bottom: 20px;
+        margin-right: 0px;
+        max-width: 80vw;
+        text-align: center;
+    }  
+    
+}
+
+@media screen and (max-width: 500px) {
+    .main-text {
+        justify-content: space-evenly;
+    }
+    .description h1 {
+        font-size: 2em;
+    }
+    .main-text h2{
+        font-size: 1.3em;
+        margin-top: 130px;
+    }
+    .main-text iframe {
+        margin-bottom: 50px;
+    }
+    nav {
+        padding-right: 0px;
+        flex-basis: 160px;
+    }
+    header {
+        height: 6vh;
+    }
+    nav ul li a i {
+        font-size: 19px;
+        color: #fff;
+    }
+    .description {
+        padding-top: 50px;
+    }
+    .dad-episodes {
+        padding-bottom: 50px;
+    }
+}
